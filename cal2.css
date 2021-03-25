@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+.containner{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    background: rgb(204, 198, 198);
+    box-shadow: 0 5px 8px 0 rgb(71, 71, 71);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: 325px;
+}
+
+.monitor{
+width: 325px;
+height: 80px;
+padding: 40px,0;
+background: rgb(248, 149, 149);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.buttons{
+    padding: 20px 20px 0 20px;
+}
+
+.row{
+    width: 500px;
+    float: left;
+}
+
+input[type=button] {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin: 5px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+input[type=text]{
+    width: 290px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    border: none;
+    background: none;
+    color: rgb(71, 75, 72);
+    text-align: right;
+    font-size: 60px;
+    font-weight: 50px;
+    line-height: 60px;
+    margin: 10px 20px 5px 10px;
+      
+}
+
+in
+
+.answer{
+    background: rgb(241, 108, 108);
+
+}
