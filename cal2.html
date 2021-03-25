@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Calculator Version 2</title>
+    <link rel="stylesheet" href="cal2.css">
+</head>
+<body>
+    <div class="containner">
+        <form name="form">
+            <div class="monitor"> 
+                <input type="text" name="monitorResult" placeholder="0">
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                    <input type="button" name="b7" value="7" onClick="Calnum(b7.value)" style="background-color: rgb(204, 234, 240);">
+                    <input type="button" name="b8" value="8" onClick="Calnum(b8.value)" style="background-color: rgb(204, 234, 240);">
+                    <input type="button" name="b9" value="9" onClick="Calnum(b9.value)" style="background-color: rgb(204, 234, 240);">
+                    <input type="button" name="add" value="+" onClick="Calnum(add.value)" style="background-color: rgb(231, 231, 193);">
+                </div>
+                <div class="row">
+                    <input type="button" name="b4" value="4" onClick="Calnum(b4.value)" style="background-color: rgb(245, 213, 245);">
+                    <input type="button" name="b5" value="5" onClick="Calnum(b5.value)" style="background-color: rgb(245, 213, 245);">
+                    <input type="button" name="b6" value="6" onClick="Calnum(b6.value)" style="background-color: rgb(245, 213, 245);">
+                    <input type="button" name="sub" value="-" onClick="Calnum(sub.value)" style="background-color: rgb(231, 231, 193);">
+                </div>
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="Calnum(b1.value)" style="background-color: rgb(210, 178, 240);">
+                    <input type="button" name="b2" value="2" onClick="Calnum(b2.value)" style="background-color: rgb(210, 178, 240);">
+                    <input type="button" name="b3" value="3" onClick="Calnum(b3.value)" style="background-color: rgb(210, 178, 240);">
+                    <input type="button" name="multi" value="*" onClick="Calnum(multi.value)" style="background-color: rgb(231, 231, 193);">
+                </div>
+                <div class="row">
+                    <input type="button" name="b0" value="0" onClick="Calnum(b0.value)" style="background-color: rgb(204, 234, 240);">
+                    <input type="button" name="bdot" value="." onClick="Calnum(bdot.value)" style="background-color: rgb(231, 231, 193);">
+                    <input type="button" name="divi" value="/" onClick="Calnum(divi.value)" style="background-color: rgb(231, 231, 193);">
+                    <input type="button" name="answer" value="="
+                         onClick="monitorResult.value=eval(monitorResult.value)" style="background-color: rgb(226, 147, 147);">
+                </div>
+                <div class="row">
+                    <input type="button" name="bce" value="CE" onClick="Clear()" style="background-color: rgb(179, 235, 179);">
+                    <h3>&nbsp;&nbsp;&nbsp;<img src="dino05.png" height="40px"> Dino Calculetor.V2</h3>
+                           
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function Calnum(result){
+            form.monitorResult.value=form.monitorResult.value+result;
+            /*alert("Total"+result)*/
+        }
+        function Clear(){
+            form.monitorResult.value="";
+        }
+    </script>
+</body>
+</html>
